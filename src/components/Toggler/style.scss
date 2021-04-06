@@ -1,0 +1,20 @@
+@use 'src/styles/vars' as v;
+
+.toggler {
+  display: block;
+  background-color: v.$color-light;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: v.$color-primary;
+  font-size: 2em;
+  border: 3px solid v.$color-primary;
+  position: relative;
+  margin: -25px auto;
+  z-index: 10;
+  transform: rotate(0);
+  transition: transform .3s;
+  &--open {
+    transform: rotate(90deg);
+  }
+}
